@@ -11,4 +11,13 @@
 
 body {
   width: 100vw;
+  color: var(--black);
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1290px;
+  height: 123px;
 }
