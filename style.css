@@ -11,7 +11,7 @@
 
 body {
   width: 100vw;
-  color: var(--black);
+  background: var(--black);
 }
 
 header {
@@ -20,4 +20,27 @@ header {
   justify-content: space-between;
   width: 1290px;
   height: 123px;
+}
+
+#header_left {
+  width: 196.712px;
+  height: auto;
+  background-size: cover;
+  background-position: center;
+}
+
+ul {
+  font-family: 'Orbitron';
+  display: flex;
+  gap: 70px;
+}
+
+ul li a {
+  color: var(--blue);
+  font-size: 21.736px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  list-style-type: none;
+  text-decoration: none;
 }
