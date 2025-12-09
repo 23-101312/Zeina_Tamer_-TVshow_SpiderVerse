@@ -152,3 +152,11 @@ h2 {
   bottom: -100px;
   left: -50px;
 }
+
+.sec3_inside {
+  background-image: url(assets/comic_bg.png);
+  height: 1448px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100%;
+}
