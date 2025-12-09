@@ -180,4 +180,46 @@ h2 {
   width: 1291px;
   height: 1185px;
   margin-top: -300px;
+  position: relative;
+}
+
+.glow, .glow2, .glow3 {
+  background-image: url(assets/loop.png);
+  background-repeat: no-repeat;
+  width: 323px;
+  height: 329px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease-in;
+}
+
+.glow p, .glow2 p, .glow3 p {
+  color: var(--white);
+  font-family: Anton;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 212px;
+}
+
+.glow {
+  right: 100px;
+  top: 120px;
+}
+
+.glow2 {
+  left: 200px;
+  top: 300px;
+}
+
+.glow3 {
+  left: 500px;
+  top: 650px;
+}
+
+.glow:hover, .glow2:hover, .glow3:hover {
+  transform: scale(1.07);
 }
