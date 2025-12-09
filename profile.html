@@ -18,7 +18,7 @@
 
       <div class="nav_right">
         <button class="login_btn">
-          <a href="login.html">login</a>
+          <a id="login" href="login.html">login</a>
         </button>
 
         <button class="cart_btn" onclick="toggleCart()">
@@ -32,7 +32,7 @@
   <div id="cart_overlay" class="cart_overlay">
   <div class="cart_panel">
     <div class="cart_header">
-      <h3>Your Cart</h3>
+      <h3 id="cart_title"></h3>
       <button class="cart_close" onclick="toggleCart()">X</button>
     </div>
 
@@ -47,28 +47,15 @@
 
     <div class="profile_header">
       <img src="assets/profile.svg" class="profile_img">
-      <h2 class="profile_name">Student Name</h2>
-      <p class="profile_role">Web Designer</p>
+      <h2 id="profile_name" class="profile_name"></h2>
+      <p id="profile_role" class="profile_role"></p>
     </div>
 
-    <p class="profile_bio">
-      Creative front-end developer who loves building clean UI and interactive designs.
+    <p id="profile_bio" class="profile_bio">
+      
     </p>
 
-    <div class="profile_stats">
-      <div>
-        <h3>12</h3>
-        <p>Projects</p>
-      </div>
-      <div>
-        <h3>5</h3>
-        <p>Years</p>
-      </div>
-      <div>
-        <h3>24</h3>
-        <p>Clients</p>
-      </div>
-    </div>
+    <div id="profile_stats" class="profile_stats"></div>
 
     <div class="profile_buttons">
       <button class="profile_btn edit_btn">Edit Profile</button>
@@ -106,6 +93,7 @@
   <script src="localstorage.js"></script>
   <script src="script.js"></script>
   <script src="character.js"></script>  
+  <script src="profile.js"></script>
 
 </body>
 </html>
