@@ -14,15 +14,24 @@ let logo = [
 let randomNum = Math.floor(Math.random() * logo.length);
 document.getElementById("header_left").style.backgroundImage = `url(${logo[randomNum]})`;
 
-let nav = ["home", "characters", "movies"];
+let nav = ["home", "characters", "movies", "merch"];
 
 for (let i = 0; i < nav.length; i++) {
+
+  if (i === 0) {
+    link = "index.html"; 
+  } else {
+    link = `#section_${i + 1}`;
+  }
+
   document.getElementById("nav").innerHTML += `
     <li>
-      <a href="#section_${i + 1}">${nav[i]}</a>
+      <a href="${link}">${nav[i]}</a>
     </li>
   `;
 }
+
+
 
 document.getElementById("footer_col1").innerHTML = `
 <h3>SPIDER-VERSE</h3>
