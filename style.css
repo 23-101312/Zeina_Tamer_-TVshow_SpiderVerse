@@ -78,3 +78,27 @@ h1 {
   font-weight: 400;
   line-height: 133.541%; /* 170.933px */
 }
+
+.sec2_title {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+h2 {
+  color: #FFF;
+  font-family: "Bebas Neue";
+  font-size: 88.073px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.sec2_title p {
+  color: #67EFEF;
+  font-family: 'Orbitron';
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
