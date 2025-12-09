@@ -10,6 +10,10 @@
   margin: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   width: 100vw;
   background: var(--black);
@@ -26,11 +30,12 @@ header {
 }
 
 #header_left {
-  width: 196.712px;
-  height: auto;
-  background-size: cover;
-  background-position: center;
+  width: 200px;
+  height: 100px;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
+
 
 ul {
   font-family: 'Orbitron';
