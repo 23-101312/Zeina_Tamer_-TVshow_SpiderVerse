@@ -14,13 +14,13 @@
     <img src="assets/preloader.webp" alt="">
   </div>
   <header>
-    <span id="header_left"></span>
     <nav>
+    <span id="header_left"></span>
       <ul id="nav">
       </ul>
-    </nav>
     <img src="assets/spiderlogo.png" alt="">
     <button><a href="login.html">login</a></button>
+    </nav>
   </header>
 
   <main>
@@ -48,14 +48,40 @@
     </section>
 
     <section class="section_4">
-      <div id="sec4_title"  class="sec2_title">
-      </div>
+      <div id="sec4_title" class="sec2_title"></div>
+
       <div class="sec4_images">
-        <img src="assets/merch1.jpg" alt="">
-        <img src="assets/merch2.jpg" alt="">
-        <img src="assets/merch3.jpg" alt="">
+
+        <div class="merch_card">
+          <img src="assets/merch1.jpg" alt="">
+          <div class="counter">
+            <button onclick="sub('merchNum0')">-</button>
+            <p id="merchNum0">1</p>
+            <button onclick="add('merchNum0')">+</button>
+          </div>
+        </div>
+
+        <div class="merch_card">
+          <img src="assets/merch2.jpg" alt="">
+          <div class="counter">
+            <button onclick="sub('merchNum1')">-</button>
+            <p id="merchNum1">1</p>
+            <button onclick="add('merchNum1')">+</button>
+          </div>
+        </div>
+
+        <div class="merch_card">
+          <img src="assets/merch3.jpg" alt="">
+          <div class="counter">
+            <button onclick="sub('merchNum2')">-</button>
+            <p id="merchNum2">1</p>
+            <button onclick="add('merchNum2')">+</button>
+          </div>
+        </div>
+
       </div>
     </section>
+
   </main>
 
   <footer class="footer">

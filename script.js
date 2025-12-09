@@ -114,13 +114,10 @@ for (let i = 0; i < characters.length; i++) {
   `;
 }
 
-
-
 function portal(index) {
   localStorage.setItem("selectedPortal", JSON.stringify(characterData[index]));
   window.location.href = "character.html"
 }
-
 
 function sub(counter) {
   let number = document.getElementById(counter).innerHTML;
