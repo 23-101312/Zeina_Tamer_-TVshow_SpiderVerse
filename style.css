@@ -666,6 +666,14 @@ height: 246px;
   height: auto;
 }
 
+.login_body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
 .login_card {
   width: 520px;
   background: var(--bg-card);
@@ -816,5 +824,102 @@ height: 246px;
 
 .signup_link:hover {
   text-decoration: underline;
+}
+
+.profile_page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 160px;
+}
+
+.profile_card {
+  width: 360px;
+  background: var(--black);
+  border: 1px solid var(--accent-soft);
+  border-radius: 15px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 0 25px rgba(60, 240, 255, 0.4);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.profile_header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.profile_img {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--accent);
+}
+
+.profile_name {
+  color: var(--white);
+  font-family: "Anton";
+  font-size: 24px;
+}
+
+.profile_role {
+  color: var(--blue);
+  font-family: "Orbitron";
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+.profile_bio {
+  color: var(--text-muted);
+  font-family: "Orbitron";
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.profile_stats {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.profile_stats h3 {
+  color: var(--white);
+  font-family: "Anton";
+  font-size: 20px;
+}
+
+.profile_stats p {
+  color: var(--grey);
+  font-size: 11px;
+  font-family: "Orbitron";
+}
+
+.profile_buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.profile_btn {
+  flex: 1;
+  padding: 8px 0;
+  border-radius: 20px;
+  border: 1px solid var(--blue);
+  background: transparent;
+  color: var(--blue);
+  font-family: "Orbitron";
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.profile_btn:hover {
+  background: var(--blue);
+  color: var(--black);
 }
 
