@@ -29,6 +29,18 @@
     </nav>
   </header>
 
+  <div id="cart_overlay" class="cart_overlay">
+  <div class="cart_panel">
+    <div class="cart_header">
+      <h3>Your Cart</h3>
+      <button class="cart_close" onclick="toggleCart()">X</button>
+    </div>
+
+    <div id="cart_items" class="cart_items">
+    </div>
+  </div>
+</div>
+
   <main class="profile_page">
 
   <div class="profile_card">
@@ -63,13 +75,12 @@
       <button class="profile_btn logout_btn">Logout</button>
     </div>
 
+    </div>
 
-  </div>
-
-</main>
+  </main>
 
 
-    <footer class="footer">
+  <footer class="footer">
   <div class="footer_container">
 
     <div id="footer_col1" class="footer_col">

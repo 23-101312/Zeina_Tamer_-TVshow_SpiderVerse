@@ -923,3 +923,8 @@ height: 246px;
   color: var(--black);
 }
 
+#style {
+  display: none;
+  color: var(--pink);
+  font-family: "Orbitron";
+}

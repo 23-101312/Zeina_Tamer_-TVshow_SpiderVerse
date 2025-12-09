@@ -1,3 +1,5 @@
+document.getElementById("style").innerHTML = `Your Credentials are Incorrect`
+
 function test(){
   let gmail = document.getElementById("gmail").value;
   let password = document.getElementById("password").value;
@@ -13,3 +15,9 @@ function test(){
   }
   }
 }
+
+document.getElementById("login_title").innerHTML = `WELCOME BACK`
+
+document.getElementById("login_subtitle").innerHTML = ` Enter your universe credentials`
+
+document.getElementById("login_btn").innerHTML = `  ENTER SPIDER-VERSE`
