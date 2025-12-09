@@ -122,4 +122,14 @@ function portal(index) {
 }
 
 
+function sub(counter) {
+  let number = document.getElementById(counter).innerHTML;
+  document.getElementById(counter).innerHTML = --number; 
+};
+
+function add(counter) {
+  let number = document.getElementById(counter).innerHTML;
+  document.getElementById(counter).innerHTML = ++number; 
+};
+
 
