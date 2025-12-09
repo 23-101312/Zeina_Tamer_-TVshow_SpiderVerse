@@ -46,41 +46,42 @@ for (let i = 0; i < movie.length; i++) {
   document.getElementById("spiderweb").innerHTML += `
     <div class="${glowClasses[i]}">
       <p class="movie_title">${movie[i]}</p>
-    </div>
-  `;
-}
-
-function portal(index) {
-  localStorage.setItem("selectedPortal", JSON.stringify(characterData[index]));
-  window.location.href = "character.hmtl"
-}
-
-let characters = [
-  {
-    img: "assets/spiderman.png",
-    sticker: "assets/spider_sticker.png",
-    nameSticker: "assets/name_spider_sticker.png"
-  },
-  {
-    img: "assets/gwen.png",
-    sticker: "assets/gwen_stickeer.png",
-    nameSticker: "assets/name_gwen_sticker.png"
-  },
-  {
-    img: "assets/miguel.png",
-    sticker: "assets/miguel_sticker.png",
-    nameSticker: "assets/name_miguel_sticker.png"
-  }
-];
-
-
+      </div>
+      `;
+    }
+    
+    let characters = [
+      {
+        img: "assets/spiderman.png",
+        sticker: "assets/spider_sticker.png",
+        nameSticker: "assets/name_spider_sticker.png"
+      },
+      {
+        img: "assets/gwen.png",
+        sticker: "assets/gwen_stickeer.png",
+        nameSticker: "assets/name_gwen_sticker.png"
+      },
+      {
+        img: "assets/miguel.png",
+        sticker: "assets/miguel_sticker.png",
+        nameSticker: "assets/name_miguel_sticker.png"
+      }
+    ];
 for (let i = 0; i < characters.length; i++) {
   document.getElementById("characters").innerHTML += `
-    <div class="portal">
+    <div onclick=portal(${i}) class="portal">
       <img src="${characters[i].img}" alt="">
       <img src="${characters[i].sticker}" alt="">
       <img src="${characters[i].nameSticker}" alt="">
     </div>
   `;
 }
+
+
+
+function portal(index) {
+  localStorage.setItem("selectedPortal", JSON.stringify(characterData[index]));
+  window.location.href = "character.html"
+}
+
 
