@@ -129,4 +129,23 @@ function add(counter) {
   document.getElementById(counter).innerHTML = ++number; 
 };
 
+let merch = [
+  { img: "assets/merch1.jpg" },
+  { img: "assets/merch2.jpg" },
+  { img: "assets/merch3.jpg" }
+];
+
+for (let i = 0; i < merch.length; i++) {
+  document.getElementById("sec4_images").innerHTML += `
+    <div class="merch_card">
+      <img src="${merch[i].img}" alt="">
+      <div class="counter">
+        <button onclick="sub('merchNum${i}')">-</button>
+        <p id="merchNum${i}">1</p>
+        <button onclick="add('merchNum${i}')">+</button>
+      </div>
+    </div>
+  `;
+}
+
 
