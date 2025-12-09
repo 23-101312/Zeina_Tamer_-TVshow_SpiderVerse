@@ -142,10 +142,40 @@ for (let i = 0; i < merch.length; i++) {
       <div class="counter">
         <button onclick="sub('merchNum${i}')">-</button>
         <p id="merchNum${i}">1</p>
-        <button onclick="add('merchNum${i}')">+</button>
+        <button onclick="add('merchNum${i}'); addToCart(${i})">+</button>
       </div>
     </div>
   `;
 }
 
+function toggleCart() {
+  let overlay = document.getElementById("cart_overlay");
+  let itemsBox = document.getElementById("cart_items");
 
+  overlay.classList.toggle("open");
+
+  let localCart = JSON.parse(localStorage.getItem("cart")) || [];
+  itemsBox.innerHTML = "";
+
+  for (let i = 0; i < localCart.length; i++) {
+    itemsBox.innerHTML += `
+      <div class="cart_item">
+        <img src="${localCart[i]}" alt="">
+      </div>
+    `;
+  }
+}
+
+function updateCartCount() {
+  let localCart = JSON.parse(localStorage.getItem("cart")) || [];
+  document.getElementById("cart_count").innerHTML = localCart.length;
+}
+
+function addToCart(index) {
+  let localCart = JSON.parse(localStorage.getItem("cart")) || [];
+
+  localCart.push(merch[index].img);
+
+  localStorage.setItem("cart", JSON.stringify(localCart));
+  updateCartCount();
+}

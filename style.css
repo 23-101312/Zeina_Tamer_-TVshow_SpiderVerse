@@ -115,6 +115,149 @@ ul li a:hover {
   color: var(--white);
 }
 
+.nav_right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.login_btn {
+  padding: 8px 18px;
+  border-radius: 20px;
+  border: 1px solid var(--blue);
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.login_btn a {
+  text-decoration: none;
+  color: var(--blue);
+  font-family: "Orbitron";
+  font-size: 14px;
+}
+
+.login_btn:hover {
+  background: var(--blue);
+}
+
+.login_btn:hover a {
+  color: var(--black);
+}
+
+.cart_btn {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--blue);
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.cart_btn img {
+  width: 20px;
+  height: 20px;
+}
+
+#cart_count {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background:var(--pink);
+  color: var(--white);
+  font-family: "Orbitron";
+  font-size: 10px;
+  border-radius: 50%;
+  padding: 2px 5px;
+  min-width: 16px;
+  text-align: center;
+}
+
+.cart_overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.775);
+  display: none; 
+  align-items: center;
+  justify-content: flex-end;
+  z-index: 200;
+  
+}
+
+.cart_overlay.open {
+  display: flex;
+}
+
+.cart_panel {
+  width: 340px;
+  height: 100%;
+  background: var(--black);
+  border-left: 1px solid rgba(103, 239, 239, 0.4);
+  box-shadow: -5px 0 25px rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.cart_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cart_header h3 {
+  color: #fff;
+  font-family: "Orbitron";
+  font-size: 18px;
+}
+
+.cart_close {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 1px solid var(--blue);
+  background: transparent;
+  color: var(--blue);
+  cursor: pointer;
+}
+
+.cart_items {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  overflow-y: auto;
+}
+
+.cart_item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px;
+  border-radius: 8px;
+  background: var(--black);
+}
+
+.cart_item img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.cart_item p {
+  color:var(--white);
+  font-family: "Orbitron";
+  font-size: 12px;
+}
+
+
 .section_1 {
   background-image: url(assets/hero.png);
   background-repeat: no-repeat;

@@ -15,13 +15,36 @@
   </div>
   <header>
     <nav>
-    <span id="header_left"></span>
-      <ul id="nav">
-      </ul>
-    <img src="assets/spiderlogo.png" alt="">
-    <button><a href="login.html">login</a></button>
+      <span id="header_left"></span>
+
+      <ul id="nav"></ul>
+
+      <div class="nav_right">
+        <button class="login_btn">
+          <a href="login.html">login</a>
+        </button>
+
+        <button class="cart_btn" onclick="toggleCart()">
+          <img src="assets/cart.svg" alt="cart">
+          <span id="cart_count">0</span>
+        </button>
+      </div>
     </nav>
   </header>
+
+  <div id="cart_overlay" class="cart_overlay">
+  <div class="cart_panel">
+    <div class="cart_header">
+      <h3>Your Cart</h3>
+      <button class="cart_close" onclick="toggleCart()">X</button>
+    </div>
+
+    <div id="cart_items" class="cart_items">
+    </div>
+  </div>
+</div>
+
+
 
   <main>
     <section id="section_1" class="section_1">

@@ -27,3 +27,5 @@ let users = [{
 ];
 
 localStorage.setItem("localUsers", JSON.stringify(users))
+
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
