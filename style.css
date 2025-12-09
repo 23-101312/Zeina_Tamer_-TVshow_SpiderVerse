@@ -104,9 +104,21 @@ h2 {
 }
 
 .sec2_inside {
-  background-image: url(assets/);
+  background-image: url(assets/sec2bg.png);
   background-repeat: no-repeat;
   background-size: cover;
   height: 600px;
   width: 100%;
+}
+
+.characters {
+  display: flex;
+  gap: 100px;
+  height: 590px;
+}
+
+.portal {
+  background-image: url(assets/portal.png);
+  height: 590px;
+  width: 350px;
 }
