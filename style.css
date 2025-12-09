@@ -25,6 +25,13 @@ body {
   overflow-x: hidden;
 }
 
+.preload {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 99;
+}
+
 header {
   display: flex;
   align-items: center;
@@ -281,6 +288,24 @@ h2 {
   transform: scale(1.07);
 }
 
+.section_4 {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+
+.sec4_images {
+  display: flex;
+  gap: 30px;
+  width: 80%;
+  margin: auto 0;
+  align-self: center;
+}
+
+.sec4_images img {
+  width: 400px;
+}
+
 .footer {
   background: #000;
   padding: 60px 0 30px;
@@ -493,6 +518,15 @@ height: 246px;
 
 .remember input {
   accent-color: var(--accent);
+}
+
+.remember p {
+  color: var(--text-muted);
+  font-family: Orbitron;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px; /* 150% */
 }
 
 .forgot_link {

@@ -18,10 +18,10 @@
       <form class="login_form">
         <label class="login_label" for="email">Email</label>
         <input
-          id="email"
+          id="gmail"
           type="email"
           class="login-input"
-          placeholder="spider@verse.com"
+          placeholder="student@eui.edu.eg"
         />
 
         <label class="login_label" for="password">Password</label>
@@ -35,7 +35,7 @@
         <div class="login_row">
           <label class="remember">
             <input type="checkbox" />
-            <span>Remember me</span>
+            <p>Remember me</p>
           </label>
           <a href="#" class="forgot_link">Forgot password?</a>
         </div>
@@ -44,11 +44,15 @@
           Don’t have an account?
           <a href="#" class="signup_link">Sign up</a>
         </p>
+        <p id="style" style="color: red; display: none;">wrong</p>
       </form>
 
       <button id="login_btn" onclick="test()">ENTER SPIDER-VERSE</button>
 
     </div>
   
+    <script src="localstorage.js"></script>
+    <script src="login.js"></script>
+
 </body>
 </html>

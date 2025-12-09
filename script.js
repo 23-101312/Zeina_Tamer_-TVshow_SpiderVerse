@@ -58,6 +58,11 @@ document.getElementById("sec3_title").innerHTML = `
   <p>The Spider-Verse Saga.</p>
 `;
 
+document.getElementById("sec4_title").innerHTML = `
+  <h2>Merch</h2>
+  <p>Every universe has a Merch.</p>
+`;
+
         
 let movie = [
   "Spider-Man: Into the Spider-Verse",
