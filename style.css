@@ -218,7 +218,7 @@ ul li a:hover {
 }
 
 .cart_header h3 {
-  color: #fff;
+  color:var(--white);
   font-family: "Orbitron";
   font-size: 18px;
 }
@@ -263,6 +263,30 @@ ul li a:hover {
   font-size: 12px;
 }
 
+#cart_items {
+  color:var(--blue);
+  font-family: "Orbitron";
+  font-size: 12px;
+}
+
+.remove_btn {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 1px solid var(--pink);
+  background: transparent;
+  color: var(--pink);
+  font-family: "Orbitron";
+  font-size: 12px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.remove_btn:hover {
+  background: var(--pink);
+  color: #000;
+  transform: scale(1.1);
+}
 
 .section_1 {
   background-image: url(assets/hero.png);

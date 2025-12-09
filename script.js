@@ -167,12 +167,14 @@ function toggleCart() {
   itemsBox.innerHTML = "";
 
   for (let i = 0; i < localCart.length; i++) {
-    itemsBox.innerHTML += `
-      <div class="cart_item">
-        <img src="${localCart[i]}" alt="">
-      </div>
-    `;
-  }
+  itemsBox.innerHTML += `
+    <div class="cart_item">
+      <img src="${localCart[i].img}">
+      <p>${localCart[i].qty}</p>
+      <button class="remove_btn" onclick="removeFromCart(${i})">X</button>
+    </div>
+   `;
+    }
 }
 
 function updateCartCount() {
@@ -183,8 +185,45 @@ function updateCartCount() {
 function addToCart(index) {
   let localCart = JSON.parse(localStorage.getItem("cart")) || [];
 
-  localCart.push(merch[index].img);
+  let product = {
+    id: index,
+    img: merch[index].img,
+    qty: 1
+  };
+
+  localCart.push(product);
 
   localStorage.setItem("cart", JSON.stringify(localCart));
   updateCartCount();
 }
+
+function removeFromCart(index) {
+  let localCart = JSON.parse(localStorage.getItem("cart")) || [];
+
+  localCart.splice(index, 1);
+
+  localStorage.setItem("cart", JSON.stringify(localCart));
+  updateCartCount();
+
+  let itemsBox = document.getElementById("cart_items");
+  itemsBox.innerHTML = "";
+
+  if (localCart.length === 0) {
+    itemsBox.innerHTML = "Cart is empty";
+  } else {
+    for (let i = 0; i < localCart.length; i++) {
+      itemsBox.innerHTML += `
+        <div class="cart_item">
+          <img src="${localCart[i].img}">
+          <p>${localCart[i].qty}</p>
+          <button class="remove_btn" onclick="removeFromCart(${i})">X</button>
+        </div>
+      `;
+    }
+  }
+}
+
+
+
+updateCartCount();
+
