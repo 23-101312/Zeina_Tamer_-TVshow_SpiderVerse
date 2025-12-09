@@ -12,11 +12,20 @@
 <body>
   <header>
     <nav>
-    <span id="header_left"></span>
-      <ul id="nav">
-      </ul>
-    <img src="assets/spiderlogo.png" alt="">
-    <button><a href="login.html">login</a></button>
+      <span id="header_left"></span>
+
+      <ul id="nav"></ul>
+
+      <div class="nav_right">
+        <button class="login_btn">
+          <a href="login.html">login</a>
+        </button>
+
+        <button class="cart_btn" onclick="toggleCart()">
+          <img src="assets/cart.svg" alt="cart">
+          <span id="cart_count">0</span>
+        </button>
+      </div>
     </nav>
   </header>
 

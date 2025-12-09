@@ -12,7 +12,12 @@
 * {
   padding: 0;
   margin: 0;
+  
 }
+
+*::-webkit-scrollbar { width: 8px; }
+*::-webkit-scrollbar-thumb { background: var(--accent); border-radius: 10px; }
+*::-webkit-scrollbar-track { background: var(--black); }
 
 html {
   scroll-behavior: smooth;
@@ -616,6 +621,7 @@ h2 {
   position: relative;
   display: flex;
   justify-content: center;
+  margin-top: 150px;
 }
 
 .spider_gif {
