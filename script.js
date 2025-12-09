@@ -43,30 +43,31 @@ let movie = [
 let glowClasses = ["glow", "glow2", "glow3"];
 
 for (let i = 0; i < movie.length; i++) {
-  document.getElementById("spiderweb").innerHTML += `
-    <div class="${glowClasses[i]}">
-      <p class="movie_title">${movie[i]}</p>
-      </div>
-      `;
-    }
+document.getElementById("spiderweb").innerHTML += `
+  <div class="${glowClasses[i]}">
+    <p class="movie_title">${movie[i]}</p>
+    </div>
+    `;
+}
     
-    let characters = [
-      {
-        img: "assets/spiderman.png",
-        sticker: "assets/spider_sticker.png",
-        nameSticker: "assets/name_spider_sticker.png"
-      },
-      {
-        img: "assets/gwen.png",
-        sticker: "assets/gwen_stickeer.png",
-        nameSticker: "assets/name_gwen_sticker.png"
-      },
-      {
-        img: "assets/miguel.png",
-        sticker: "assets/miguel_sticker.png",
-        nameSticker: "assets/name_miguel_sticker.png"
-      }
-    ];
+let characters = [
+  {
+    img: "assets/spiderman.png",
+    sticker: "assets/spider_sticker.png",
+    nameSticker: "assets/name_spider_sticker.png"
+  },
+  {
+    img: "assets/gwen.png",
+    sticker: "assets/gwen_stickeer.png",
+    nameSticker: "assets/name_gwen_sticker.png"
+  },
+  {
+    img: "assets/miguel.png",
+    sticker: "assets/miguel_sticker.png",
+    nameSticker: "assets/name_miguel_sticker.png"
+  }
+];
+
 for (let i = 0; i < characters.length; i++) {
   document.getElementById("characters").innerHTML += `
     <div onclick=portal(${i}) class="portal">
@@ -83,5 +84,29 @@ function portal(index) {
   localStorage.setItem("selectedPortal", JSON.stringify(characterData[index]));
   window.location.href = "character.html"
 }
+
+document.getElementById("footer_col1").innerHTML = `
+<h3>SPIDER-VERSE</h3>
+      <p>Every universe has a Spider.</p>
+`;
+
+
+let footNav = ["home", "characters", "movies"];
+
+document.getElementById("footer_col").innerHTML = `
+  <h4>Navigation</h4>
+  <ul id="footer_nav"></ul>
+`;
+
+for (let i = 0; i < footNav.length; i++) {
+  document.getElementById("footer_nav").innerHTML += `
+    <li>
+      <a href="#section_${i + 1}">${footNav[i]}</a>
+    </li>
+  `;
+}
+
+
+document.getElementById("footer_bottom").innerHTML = `<p>© 2025 Spider-Verse Fan Project. All rights reserved.</p>`
 
 
