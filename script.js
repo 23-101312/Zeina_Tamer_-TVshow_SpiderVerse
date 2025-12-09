@@ -8,23 +8,16 @@ let logo = [
 let randomNum = Math.floor(Math.random() * logo.length);
 document.getElementById("header_left").style.backgroundImage = `url(${logo[randomNum]})`;
 
+let nav = ["home", "characters", "movies"];
 
-
-let nav = ["home", "characters" , "movies"];
-
-document.getElementById("nav").innerHTML +=
-    `
+for (let i = 0; i < nav.length; i++) {
+  document.getElementById("nav").innerHTML += `
     <li>
-        <a href="#section_1">${nav[0]}</a>
+      <a href="#section_${i + 1}">${nav[i]}</a>
     </li>
-    <li>
-        <a href="#section_2">${nav[1]}</a>
-    </li>
-    <li>
-        <a href="#section_3">${nav[2]}</a>
-    </li>
-`;            
-
+  `;
+}
+        
 document.getElementById("hero_title").innerHTML = `        
         <h1>ACROSS THE SPIDER-VERSE</h1>
         <p>Every universe has a Spider.</p>`
@@ -41,14 +34,21 @@ document.getElementById("sec3_title").innerHTML = `
 `;
 
         
-let movie = ["Spider-Man: Into the Spider-Verse", "Spider-Man: Across The Spider-Verse" , "Spider-Man: Beyond the Spider-Verse"];
+let movie = [
+  "Spider-Man: Into the Spider-Verse",
+  "Spider-Man: Across The Spider-Verse",
+  "Spider-Man: Beyond the Spider-Verse"
+];
 
-document.getElementById("spiderweb").innerHTML +=
-    `
-    <div class="glow"><p id="movie_title">${movie[0]}</p>
-          </div>
-          <div class="glow2"><p id="movie_title">${movie[1]}</p>
-          </div>
-          <div class="glow3"><p id="movie_title">${movie[2]}</p>
-    </div>`;  
+let glowClasses = ["glow", "glow2", "glow3"];
+
+for (let i = 0; i < movie.length; i++) {
+  document.getElementById("spiderweb").innerHTML += `
+    <div class="${glowClasses[i]}">
+      <p class="movie_title">${movie[i]}</p>
+    </div>
+  `;
+}
+
+
     
