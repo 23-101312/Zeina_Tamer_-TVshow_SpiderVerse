@@ -50,5 +50,18 @@ for (let i = 0; i < movie.length; i++) {
   `;
 }
 
+// let portals = document.querySelectorAll(".portal");
 
+// for (let i = 0; i < portals.length; i++) {
+//   portals[i].addEventListener("click", function () {
+//     let charId = portals[i].getAttribute("data-character"); 
+//     localStorage.setItem("selectedCharacter", charId);
+//     window.location.href = "character.html"; 
+//   });
+// }
+
+function portal(index) {
+  localStorage.setItem("selectedPortal", JSON.stringify(characterData[index]));
+  window.location.href = "character.hmtl"
+}
     
