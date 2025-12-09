@@ -182,12 +182,32 @@ h2 {
   top: -150px;
   right: -30px;
   transform: scale(0.8);
+  animation: rotateFloat 4s ease-in-out infinite;
+  transform-origin: center;
 }
 
 .portal img:nth-child(3) {
   position: absolute;
   bottom: -100px;
   left: -50px;
+}
+
+@keyframes rotateFloat {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-3deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(3deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
 
 .section_3 {
