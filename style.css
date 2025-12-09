@@ -102,3 +102,11 @@ h2 {
   font-weight: 800;
   line-height: normal;
 }
+
+.sec2_inside {
+  background-image: url(assets/);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+  width: 100%;
+}
