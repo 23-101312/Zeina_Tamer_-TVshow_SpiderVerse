@@ -13,6 +13,7 @@ body {
   width: 100vw;
   background: var(--black);
   margin: 0 auto;
+  overflow-x: hidden;
 }
 
 header {
@@ -49,8 +50,8 @@ ul li a {
 .section_1 {
   background-image: url(assets/hero.png);
   background-repeat: no-repeat;
-  background-size: contain;
-  height: 1440px;
+  background-size: 100% auto;
+  width: 100%;
 }
 
 #hero_title {
@@ -83,10 +84,11 @@ h1 {
   display: flex;
   flex-direction: column;
   gap: 5px;
+  padding: 0 0 0 128px;
 }
 
 h2 {
-  color: #FFF;
+  color: var(--white);
   font-family: "Bebas Neue";
   font-size: 88.073px;
   font-style: normal;
@@ -95,12 +97,19 @@ h2 {
 }
 
 .sec2_title p {
-  color: #67EFEF;
+  color: var(--blue);
   font-family: 'Orbitron';
   font-size: 36px;
   font-style: normal;
   font-weight: 800;
   line-height: normal;
+}
+
+.section_2 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 200px;
 }
 
 .sec2_inside {
@@ -109,7 +118,9 @@ h2 {
   background-size: cover;
   height: 600px;
   width: 100%;
-  margin-top: 200px;
+  margin-top: 350px;
+  display: flex;
+  justify-content: center;
 }
 
 #characters {
@@ -129,11 +140,10 @@ h2 {
   position: relative;
 }
 
-
 .portal img:nth-child(2) {
   position: absolute;
-  top: -100px;
-  right: 0;
+  top: -150px;
+  right: -30px;
 }
 
 
