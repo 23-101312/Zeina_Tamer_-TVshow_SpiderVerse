@@ -68,6 +68,9 @@ ul li a:hover {
   background-repeat: no-repeat;
   background-size: 100% auto;
   width: 100%;
+  height: 720px;
+  align-items: center;
+  display: flex;
 }
 
 #hero_title {
@@ -125,7 +128,7 @@ h2 {
   width: 100%;
   display: flex;
   flex-direction: column;
-  margin-top: 200px;
+  margin-top: 100px;
 }
 
 .sec2_inside {
@@ -167,7 +170,6 @@ h2 {
   right: -30px;
 }
 
-
 .portal img:nth-child(3) {
   position: absolute;
   bottom: -100px;
@@ -176,7 +178,7 @@ h2 {
 
 .section_3 {
   height: 1410px;
-  margin-top: 200px;
+  margin-top: 100px;
 }
 
 .sec3_inside {
@@ -213,12 +215,13 @@ h2 {
 
 .glow p, .glow2 p, .glow3 p {
   color: var(--white);
-  font-family: Anton;
+  font-family: 'Anton';
   font-size: 32px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   width: 212px;
+  text-align: center;
 }
 
 .glow {

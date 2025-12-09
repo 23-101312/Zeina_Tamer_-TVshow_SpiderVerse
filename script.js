@@ -7,3 +7,7 @@ let logo = [
 
 let randomNum = Math.floor(Math.random() * logo.length);
 document.getElementById("header_left").style.backgroundImage = `url(${logo[randomNum]})`;
+
+document.getElementById("nav").innerHTML = `<li><a href="#section_1">home</a></li>
+        <li><a href="#section_2">characters</a></li>
+        <li><a href="#section_3">movies</a></li>`
