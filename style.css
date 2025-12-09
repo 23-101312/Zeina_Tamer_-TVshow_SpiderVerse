@@ -138,6 +138,11 @@ h2 {
   align-items: center;
   justify-content: center;
   position: relative;
+  transition: all 0.3s ease-in;
+}
+
+.portal:hover {
+  transform: scale(1.08);
 }
 
 .portal img:nth-child(2) {
@@ -153,10 +158,26 @@ h2 {
   left: -50px;
 }
 
+.section_3 {
+  height: 1410px;
+  margin-top: 200px;
+}
+
 .sec3_inside {
   background-image: url(assets/comic_bg.png);
   height: 1448px;
   background-repeat: no-repeat;
   background-size: 100%;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 350px;
+}
+
+.spiderweb {
+  background-image: url(assets/spiderweb.png);
+  background-repeat: no-repeat;
+  width: 1291px;
+  height: 1185px;
+  margin-top: -300px;
 }
