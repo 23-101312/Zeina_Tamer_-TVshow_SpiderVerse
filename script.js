@@ -17,6 +17,31 @@ for (let i = 0; i < nav.length; i++) {
     </li>
   `;
 }
+
+document.getElementById("footer_col1").innerHTML = `
+<h3>SPIDER-VERSE</h3>
+      <p>Every universe has a Spider.</p>
+`;
+
+
+let footNav = ["home", "characters", "movies"];
+
+document.getElementById("footer_col").innerHTML = `
+  <h4>Navigation</h4>
+  <ul id="footer_nav"></ul>
+`;
+
+for (let i = 0; i < footNav.length; i++) {
+  document.getElementById("footer_nav").innerHTML += `
+    <li>
+      <a href="#section_${i + 1}">${footNav[i]}</a>
+    </li>
+  `;
+}
+
+
+document.getElementById("footer_bottom").innerHTML = `<p>© 2025 Spider-Verse Fan Project. All rights reserved.</p>`
+
         
 document.getElementById("hero_title").innerHTML = `        
         <h1>ACROSS THE SPIDER-VERSE</h1>
@@ -85,28 +110,5 @@ function portal(index) {
   window.location.href = "character.html"
 }
 
-document.getElementById("footer_col1").innerHTML = `
-<h3>SPIDER-VERSE</h3>
-      <p>Every universe has a Spider.</p>
-`;
-
-
-let footNav = ["home", "characters", "movies"];
-
-document.getElementById("footer_col").innerHTML = `
-  <h4>Navigation</h4>
-  <ul id="footer_nav"></ul>
-`;
-
-for (let i = 0; i < footNav.length; i++) {
-  document.getElementById("footer_nav").innerHTML += `
-    <li>
-      <a href="#section_${i + 1}">${footNav[i]}</a>
-    </li>
-  `;
-}
-
-
-document.getElementById("footer_bottom").innerHTML = `<p>© 2025 Spider-Verse Fan Project. All rights reserved.</p>`
 
 

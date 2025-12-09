@@ -3,6 +3,10 @@
   --black: #000000;
   --blue: #67EFEF;
   --grey: #666;
+  --accent: #3cf0ff;
+  --accent-soft: rgba(60, 240, 255, 0.4);
+  --text-muted: #a7a7c2;
+  --pink: #ff2edb;
 }
 
 * {
